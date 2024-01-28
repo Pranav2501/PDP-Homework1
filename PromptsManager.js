@@ -8,10 +8,13 @@ import TimestampedInteraction from "./TimestampedInteraction.js";
 import DalleInteraction from "./DalleInteraction.js";
 import Interaction from "./Interaction.js";
 import readline from "readline";
+import ReferenceManager from "./ReferenceManager.js";
 
 
 //Class definition for PromptsManager
 class PromptsManager{
+  referenceManager = new ReferenceManager();
+
   // Array to store all the interactions
   interactions = [];
   // Method to show all the interactions
@@ -31,10 +34,7 @@ class PromptsManager{
     const p = new Interaction(prompt, response);
     this.interactions.push(p);
   }
-  recordtimestampedPrompt(prompt, response, timestamp=Date.now()) {
-    const p = new TimestampedInteraction(prompt, response, timestamp);
-    p.showInteraction();
-  }
+  
 
   //method to add timestamp to existing interactions, default timestamp is: current time
 
@@ -94,10 +94,8 @@ class PromptsManager{
           break;
         case "2":
           rl.question("Enter index of interaction to remove: ", (index) => {
-            this.removeInteraction(parseInt(index));
-            console.log("Interaction removed.");
+            this.referenceManager.removeInteraction(this.interactions, parseInt(index));
             console.log("\n1: Add interaction, \n2: Remove interaction, \n3: Show all interactions, \n4: Add DalleInteraction, \n5: Add timestamp to interaction, \n6: Search by keyword, \nexit: Exit");
-
           });
           break;
         case "3":
