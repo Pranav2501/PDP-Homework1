@@ -1,4 +1,5 @@
 # Project Name 
+Programming Design Paradigms - Homework 1
 
 ## Description
 
