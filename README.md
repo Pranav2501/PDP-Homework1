@@ -1,5 +1,7 @@
 # Project Name 
 Programming Design Paradigms - Homework 1
+Name : Pranav Raj Sowrirajan Balaji
+Date : 27 January 2024
 
 ## Description
 
