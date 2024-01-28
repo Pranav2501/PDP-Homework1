@@ -14,7 +14,7 @@ class DalleInteraction extends Interaction {
   showInteraction() {
     //call showInteraction method of Interaction class
     super.showInteraction();
-    console.log(`Image URL: ${this.imageUrl}`);
+    console.log(`Image URL: ${this.imageUrl}`,"isDalle?:",this.getType());
   }
   //method to get type of interaction
   getType() {

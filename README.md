@@ -6,7 +6,7 @@ Date : 27 January 2024
 ## Description
 
 This project is a PromptsManager created for recording ChatGPT prompts and responses.<br>
-It has the MAIN Class PromptsManager in the filename "PromptsManager.js", which contains all the main functionalities along with a menu-driven approach to accept user inputs. There also other classes such as Interaction which records the prompts and responses from ChatGPT and displays them, TimestampedInteraction which adds timestamps to existing interactions, DalleInteraction adds prompts and responses from ChatGPT which involve images. <br>
+It has the MAIN Class PromptsManager in the filename "PromptsManager.js", which contains all the main functionalities along with a menu-driven approach to accept user inputs. There also other classes such as Interaction which records the prompts and responses from ChatGPT and displays them, TimestampedInteraction which adds timestamps to existing interactions, DalleInteraction adds prompts and responses from ChatGPT which involve images and has function to show if a record is Dalleinteractions or not. <br>
 This project has various functionalities like:<br>
 1.Insert a new record for ChatGPT prompt and response.<br>
 2.Delete a record from existing records.<br>
@@ -14,6 +14,7 @@ This project has various functionalities like:<br>
 4.Add DalleInteractions : It needs three parameters i.e (prompt,response, Image URL)<br>
 5.Add Timestamps to existing records, default is current time & date<br>
 6.Search for either a prompt/response by using a keyword that is contained in the prompt/response. ----> (Creative Addition)
+
 
 
 ## Installation

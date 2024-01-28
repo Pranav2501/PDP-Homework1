@@ -156,6 +156,7 @@ class PromptsManager{
 //creating an instance of PromptsManager
 const myPromptManager = new PromptsManager();
 //starting the menu
+//default inputs to ChatGPT
 myPromptManager.recordPrompt("Hello", "Hi");
 myPromptManager.startMenu();
 export default PromptsManager;
