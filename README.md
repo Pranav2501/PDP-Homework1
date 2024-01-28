@@ -5,7 +5,14 @@ Date : 27 January 2024
 
 ## Description
 
-This project is a [describe what your project does and who it's for]. It was created by [your name or team name].
+This project is a PromptsManager created for recording ChatGPT propmts and responses. It has the MAIN Class PromptsManager in the filename "PromptsManager.js". This project has various functionalities like:<br>
+1.Insert a new record for ChatGPT prompt and response.<br>
+2.Delete a record from existing records.<br>
+3.Show all available records and their types.<br>
+4.Add DalleInterationcs : It needs three parameters i.e (prompt,response, Image URL)<br>
+5.Add Timestamps to existing records, default is current time & date<br>
+6.Search for either a prompt/response by using a keyword that is contained in the prompt/response (Creative Addition)
+
 
 ## Installation
 
